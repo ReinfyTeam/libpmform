@@ -1,6 +1,7 @@
 {
   "name": "reinfyteam/libpmform",
   "description": "Simple form library",
+  "type": "library",
   "minimum-stability": "dev",
   "license": "Apache-2.0",
   "authors": [
