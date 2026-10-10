@@ -31,6 +31,9 @@ class SimpleForm extends Form {
     }
 
     public function addButton(string $text): void {
-        $this->data["buttons"][] = ["text" => $text];
+        /** @var list<array{text: string}> $buttons */
+        $buttons = $this->data["buttons"] ?? [];
+        $buttons[] = ["text" => $text];
+        $this->data["buttons"] = $buttons;
     }
 }

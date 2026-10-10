@@ -42,14 +42,20 @@ class CustomForm extends Form {
             $input["placeholder"] = $placeholder;
         }
 
-        $this->data["content"][] = $input;
+        /** @var list<array<string, mixed>> $content */
+        $content = $this->data["content"];
+        $content[] = $input;
+        $this->data["content"] = $content;
     }
 
     /**
      * Adds label (text) to the custom form
      */
     public function addLabel(string $text): void {
-        $this->data["content"][] = ["type" => "label", "text" => $text];
+        /** @var list<array<string, mixed>> $content */
+        $content = $this->data["content"];
+        $content[] = ["type" => "label", "text" => $text];
+        $this->data["content"] = $content;
     }
 
     /**
@@ -61,7 +67,10 @@ class CustomForm extends Form {
             $toggle["default"] = $defaultValue;
         }
 
-        $this->data["content"][] = $toggle;
+        /** @var list<array<string, mixed>> $content */
+        $content = $this->data["content"];
+        $content[] = $toggle;
+        $this->data["content"] = $content;
     }
 
     /**
@@ -75,6 +84,9 @@ class CustomForm extends Form {
             $dropdown["default"] = $defaultOption;
         }
 
-        $this->data["content"][] = $dropdown;
+        /** @var list<array<string, mixed>> $content */
+        $content = $this->data["content"];
+        $content[] = $dropdown;
+        $this->data["content"] = $content;
     }
 }
