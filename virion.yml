@@ -2,8 +2,8 @@ name: libpmform
 api: 5.0.0
 author: CzechPMDevs
 authors: [VixikHD]
-description: Simple library for creating forms on pocketmine servers
+description: PHP library for creating JSON forms on PocketMine-MP servers
 version: 1.1.0
 antigen: czechpmdevs\libpmform
 
-php: [7.4, 8.0]
+php: [8.1, 8.2, 8.3, 8.4]

@@ -1,6 +1,6 @@
 {
   "name": "reinfyteam/libpmform",
-  "description": "Simple form library",
+  "description": "PHP library for creating JSON forms for PocketMine-MP servers",
   "type": "library",
   "minimum-stability": "dev",
   "prefer-stable": true,
