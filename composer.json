@@ -3,6 +3,7 @@
   "description": "Simple form library",
   "type": "library",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "license": "Apache-2.0",
   "authors": [
     {
@@ -18,7 +19,7 @@
     "pocketmine/pocketmine-mp": "^5.0.0"
   },
   "require-dev": {
-    "phpstan/phpstan": "1.12.34"
+    "phpstan/phpstan": "^2.1"
   },
   "autoload": {
     "psr-4": {
