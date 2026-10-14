@@ -18,7 +18,7 @@ composer require reinfyteam/libpmform
 
 For a PocketMine-MP plugin distributed as a PHAR, include the library through
 the project's normal Virion packaging workflow. The project uses the
-[DevTools repository](https://github.com/pmmp/DevTools) for plugin packaging;
+[DevTools repository](https://github.com/NhanAZ/DevTools) for plugin packaging;
 the build tool version is selected by the consuming build configuration.
 
 ## Usage
